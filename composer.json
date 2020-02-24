@@ -1,0 +1,19 @@
+{
+    "name": "max/vendas-de-produtos",
+    "description": "Sistema de gerenciamento de produtos para um empresa",
+    "type": "project",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Shumax",
+            "email": "maxcastro.mv@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Buy\\" : "src\\"
+        }
+    }
+}
