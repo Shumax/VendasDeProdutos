@@ -1,0 +1,16 @@
+a {
+    color: black;
+    background: grey;
+    border-radius: 20px;
+    padding: 25px;
+    
+}
+
+button{
+    background-color : silver;
+    border-bottom: #333333;
+    border-style: solid;
+    border-radius: 25px;
+    padding: 25px;
+    width: 800px;
+}
