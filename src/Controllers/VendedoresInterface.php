@@ -4,11 +4,11 @@ namespace Buy\Controllers;
 
 interface VendedoresInterface
 {
-	public function insertVendedores(): string;
+	public function insertVendedores($tabela, $array): string;
 
-	public function listVendedores(): array;
+	public function listVendedores($tabela, $where, $campos): array;
 
-	public function changeVendedores(): string;
+	public function changeVendedores($tabela, $array, $where): string;
 
-	public function deleteVendedores(): string;
+	public function deleteVendedores($tabela, $where): string;
 }

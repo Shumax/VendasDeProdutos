@@ -12,18 +12,21 @@ class ProdutosControl implements ProdutosInterface
 		return $in;
 	}
 
-	public function listProdutos(): array
+	public function listProdutos($tabela, $where, $campos): array
 	{
-		return [];
+		$list = (new Manipulation)->listData($tabela, $where, $campos);
+		return $list;
 	}
 
-	public function changeProdutos(): string
+	public function changeProdutos($tabela, $array, $where): string
 	{
-		return "";
+		$change = (new Manipulation)->changeData($tabela, $array, $where);
+		return $change;
 	}
 
-	public function deleteProdutos(): string
+	public function deleteProdutos($tabela, $where): string
 	{
-		return "";
+		$delete = (new Manipulation)->deleteData($tabela, $where);
+		return $delete;
 	}
 }
