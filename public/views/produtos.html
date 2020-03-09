@@ -3,21 +3,32 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Produtos</title>
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-	<div>
-		<form method=post action="produtos.php">
-			Nome: <input type="text" name="nome"/><br/>
-			Preço: <input type="double" name="preco"/><br/>
-			<!--<fieldset><legend>Sexo</legend>
-				<input type="radio" name="sexo" id="masc" value="homem" checked/>
-				<label for="masc">Masculino</label><br/>
-				<input type="radio" name="sexo" id="fem" value="mulher"/>
-				<label for="fem">Feminino</label>
-			</fieldset><br/>-->
-			<input type="submit" value="Enviar"/>
+	<header class="container">
+		<nav class="menu">
+			<h1>
+				<a href="index.html">
+					<img src="../img/logo2.png" alt="Logo Vendas De Produtos">
+				</a>
+			</h1>
+			<ul>
+				<li><a  href='produtos.html'>Gerenciar Produtos</a></li>
+				<li><a  href='vendedores.html'>Gerenciar Vendedores</a> </li>
+				<li><a  href='venda.html'>Gerenciar Vendas</a> </li>
+			</ul>
+		</nav>
+	</header>
+	<section class="cadastro">
+		<form id="form-produtos" method=post action="produtos.php">
+			Nome <input type="text" name="nome" id="nome"/><br/>
+			Preço <input type="double" name="preco" id="preco"/><br/>
+			<div class="enviar">
+				<input type="submit" value="Enviar"/>
+			</div>			
 		</form>
-	</div>
-	
+	</section>
+	<script src="../js/app.js"></script>
 </body>
 </html>
